@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Brian Wiborg
+  description: Role for installing and configuring EasyDB PostgreSQL component.
+  company: Programmfabrik GmbH
+  license: GPL2
+  min_ansible_version: 2.7
+
+  platforms:
+  - name: Debian
+    versions:
+    - 9
+    - stretch
+
+dependencies: []

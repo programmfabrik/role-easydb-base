@@ -1,0 +1,12 @@
+- name: check customer protection
+  when: easydb_skip_customer
+  fail:
+    msg: Please remove `easydb_skip_customer` protection!
+
+- name: installing all required dependencies
+  loop_control:
+    loop_var: easydb_dep_item
+  with_items: "{{ easydb_dep_pkgs }}"
+  package:
+    name: "{{ easydb_dep_item }}"
+    state: present

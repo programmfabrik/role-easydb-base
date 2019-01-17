@@ -1,0 +1,9 @@
+easydb_skip_customer: no
+easydb_dep_pkgs:
+  - python-docker
+
+### DOCKER ###
+easydb_docker_user: ''
+easydb_docker_pass: ''
+easydb_docker_regsitry: docker.easydb.de
+easydb_docker_network: easydb5
